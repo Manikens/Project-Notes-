@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заметки</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<div class="note-header img">
+			<h1>Заметки</h1>
+			<div class="input-list">
+				<input type="text" id="task-list" placeholder="Ввведите текст...">
+				<button id="add-task-btn" class="add-note-button">Добавить</button>
+			</div>
+			<div style="text-align: center; padding-bottom: 15px; font-size: 30px; font-weight: bolder;">Список:</div>
+		</div>
+		<div class="flex-list">
+			<div class="dynamic-list">
+				<script>tasksOnload()</script>
+			</div>
+		</div>
+	</div>		
+	<script src="main.js"></script>
+</body>
+</html>

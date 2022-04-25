@@ -1,0 +1,165 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.582);
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+h1 {
+	text-align: center;
+}
+
+.img {
+	background: url("https://sun9-84.userapi.com/s/v1/if2/mbe2ZNSBC4XWq9oBbc5b4FSIgRDnm9X8A5aFXMFqSehnEx2kYLWOoNmJMpAWHr1rI4ScRwbGFgTzhwZiHPU5B8Q2.jpg?size=2040x922&quality=96&type=album");
+	padding-top: 100px;
+	width: 900px;
+	margin: 0 auto;
+	background-size: cover;
+}
+
+.flex-list {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.add-check-list {
+	display: flex;
+	width: 500px;
+	min-height: 40px;
+	align-items: center;
+	/* background-color: rgb(74, 141, 91); */
+	padding: 10px;
+}
+
+.input-list {
+	padding: 20px 40px 20px 40px;
+	display: flex;
+	gap: 15px;
+}
+
+.input-list input {
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	padding: 15px;
+	font-size: 16px;
+}
+
+.add-note-button {
+	padding: 15px;
+	background: #cad1d7;
+	border: none;
+	border-radius: 4px;
+	color: black;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: ease-in-out 0.3s;
+}
+
+.add-note-button:hover {
+	background: #a5b0b9;
+	box-shadow: 0px 0px 20px 5px #504444;
+}
+
+.button-click {
+	width: 20%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button-click button{
+	width: 85%;
+	background-color: rgb(14, 17, 15);
+	color: #ffffff;
+	outline: none;
+	border: none;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.dynamic-item {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    background-color: rgb(247, 227, 204);
+    word-break: break-all;
+    width: 70%;
+}
+
+.dynamic-list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: stretch;
+}
+
+.checkbox-complete {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.btn-delete {
+	outline: none;
+	border: none;
+	background-color: red;
+	color: #ffffff;
+	cursor: pointer;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.note {
+    background: url(https://sun9-81.userapi.com/s/v1/if2/e5ZobLqHGc68o6MQJOm7-9Muy3Xg2AFsoFf8Of_W8QD_yHV28ipP0uFWsvlQZsQODRb0kLPC3NxqwjzHFC_EAk_g.jpg?size=1796x590&quality=96&type=album);
+    margin-left: 13px;
+   	width: 847px;
+		padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.dynamic-item.checked {
+	background-color: rgb(24, 212, 24);
+	opacity: 0.5;
+}
+
+.dynamic-item.delete {
+	animation: opacity 1s ease-in-out;
+}
+
+.description {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	color: rgb(0, 0, 0);
+}
+
+.buttons-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+@keyframes opacity {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
